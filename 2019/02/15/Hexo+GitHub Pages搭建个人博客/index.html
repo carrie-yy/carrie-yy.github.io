@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,13 @@
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -59,7 +66,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.icon?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -68,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="hexo,GitHub,">
+  <meta name="keywords" content="hexo,GitHub Pages,">
 
 
 
@@ -79,18 +86,22 @@
 
 
 
-<meta name="description" content="我的第一篇博客hexo+GitHub Page 搭建个人博客（一）使用到的技术hexo、  GitHub Page 、 Node.js">
-<meta name="keywords" content="hexo,GitHub">
+<meta name="description" content="Tips: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
+<meta name="keywords" content="hexo,GitHub Pages">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="https://carrie-yy.github.io/2019/02/15/我的第一篇博客/index.html">
+<meta property="og:title" content="Hexo +GitHub Pages 搭建个人博客">
+<meta property="og:url" content="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/index.html">
 <meta property="og:site_name" content="Carrie&#39;s Blog">
-<meta property="og:description" content="我的第一篇博客hexo+GitHub Page 搭建个人博客（一）使用到的技术hexo、  GitHub Page 、 Node.js">
+<meta property="og:description" content="Tips: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-15T06:07:35.918Z">
+<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550470741.png">
+<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550490145%281%29.png">
+<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550490355%281%29.png">
+<meta property="og:updated_time" content="2019-02-20T00:52:03.405Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客">
-<meta name="twitter:description" content="我的第一篇博客hexo+GitHub Page 搭建个人博客（一）使用到的技术hexo、  GitHub Page 、 Node.js">
+<meta name="twitter:title" content="Hexo +GitHub Pages 搭建个人博客">
+<meta name="twitter:description" content="Tips: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
+<meta name="twitter:image" content="http://pn601wq05.bkt.clouddn.com/1550470741.png">
 
 
 
@@ -98,9 +109,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -120,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://carrie-yy.github.io/2019/02/15/我的第一篇博客/">
+  <link rel="canonical" href="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/">
 
 
 
 
 
-  <title>我的第一篇博客 | Carrie's Blog</title>
+  <title>Hexo +GitHub Pages 搭建个人博客 | Carrie's Blog</title>
   
 
 
@@ -136,19 +147,29 @@
 
 
 
+ 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
   
   
     
   
-
-  <div class="container sidebar-position-left page-post-detail">
+  <!--自定义背景动画
+  <div class="bg_content">
+    <div class="filter"></div>
+    <canvas id="canvas"></canvas>
+  </div>-->
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
+<a href="https://github.com/carrie-yy" class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>    
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+	<header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -273,6 +294,7 @@
 
 
  </div>
+	    
     </header>
 
     <main id="main" class="main">
@@ -295,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/02/15/我的第一篇博客/">
+    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Carrie">
@@ -312,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的第一篇博客</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo +GitHub Pages 搭建个人博客</h1>
         
 
         <div class="post-meta">
@@ -366,6 +388,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>use_motion
+            </span>
+          
 
           
 
@@ -384,7 +411,37 @@
       
 
       
-        <h1 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><h2 id="hexo-GitHub-Page-搭建个人博客（一）"><a href="#hexo-GitHub-Page-搭建个人博客（一）" class="headerlink" title="hexo+GitHub Page 搭建个人博客（一）"></a>hexo+GitHub Page 搭建个人博客（一）</h2><h3 id="使用到的技术"><a href="#使用到的技术" class="headerlink" title="使用到的技术"></a>使用到的技术</h3><p>hexo、  GitHub Page 、 Node.js<br><a id="more"></a><br>余下全文。。。。。。敬请期待</p>
+        <hr>
+<blockquote>
+<p>Tips: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js</p>
+<a id="more"></a>
+</blockquote>
+<ol>
+<li><h4 id="使用GitHub在自己主页创建一个新的版本库"><a href="#使用GitHub在自己主页创建一个新的版本库" class="headerlink" title="使用GitHub在自己主页创建一个新的版本库"></a>使用GitHub在自己主页创建一个新的版本库</h4><p><img src="http://pn601wq05.bkt.clouddn.com/1550470741.png" alt="image"></p>
+</li>
+</ol>
+<ul>
+<li>配置GitHub Pages: 进去版本库，点击右上角Settings。选择一个主题<br> <img src="http://pn601wq05.bkt.clouddn.com/1550490145%281%29.png" alt="image"><br> <img src="http://pn601wq05.bkt.clouddn.com/1550490355%281%29.png" alt="image"></li>
+</ul>
+<p><strong>至此，我们已经配置好了github默认的静态站点，并且可以访问：你的github用户名.github.io测试我们刚刚建立好的站点主页。</strong></p>
+<hr>
+<ol start="2">
+<li><h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><ol>
+<li><strong>官网下载并安装git <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a></strong></li>
+<li><p><strong>测试是否安装成功</strong>  windows+R输入cmd打开命令提示符窗口，输入如下命令：</p>
+<p> <code>git --version</code></p>
+<p>若安装成功会打印出本机安装的git的版本。</p>
+<ol start="3">
+<li><p><strong>添加SSH KEY到Github</strong></p>
+<p>SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交</p>
+</li>
+</ol>
+<p><strong>（1）检测本机是否有设置 SSHKEY</strong></p>
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
 
       
     </div>
@@ -433,7 +490,7 @@
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/GitHub/" rel="tag"># GitHub</a>
+            <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
           
         </div>
       
@@ -446,15 +503,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/15/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/19/Hexo+GitHub Pages搭建个人博客2/" rel="prev" title="Hexo +GitHub Pages 搭建个人博客（二）">
+                Hexo +GitHub Pages 搭建个人博客（二） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -577,9 +634,15 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="402980321@qq.com" target="_blank" title="E-Mail">
+                    <a href="https://segmentfault.com/u/carrie_5b177f4aaf042" target="_blank" title="SegmentFault">
                       
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                        <i class="fa fa-fw fa-globe"></i>SegmentFault</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/yy193728" target="_blank" title="csdn">
+                      
+                        <i class="fa fa-fw fa-globe"></i>csdn</a>
                   </span>
                 
             </div>
@@ -606,7 +669,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我的第一篇博客"><span class="nav-number">1.</span> <span class="nav-text">我的第一篇博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-GitHub-Page-搭建个人博客（一）"><span class="nav-number">1.1.</span> <span class="nav-text">hexo+GitHub Page 搭建个人博客（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用到的技术"><span class="nav-number">1.1.1.</span> <span class="nav-text">使用到的技术</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用GitHub在自己主页创建一个新的版本库"><span class="nav-number">1.</span> <span class="nav-text">使用GitHub在自己主页创建一个新的版本库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li></ol></div>
             
 
           </div>
@@ -614,6 +677,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -628,28 +698,32 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">true</span>
+  <span class="author" itemprop="copyrightHolder">carrie</span>
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
 
 
 
@@ -661,11 +735,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -690,6 +759,8 @@
 
   
 
+
+  
 
 
 
@@ -731,6 +802,11 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -743,13 +819,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
@@ -1199,13 +1268,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/zh-tw/docs/variables.html
-      var isPost = '我的第一篇博客'.length > 0
+      var isPost = 'Hexo +GitHub Pages 搭建个人博客'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = '我的第一篇博客'
+        var title = 'Hexo +GitHub Pages 搭建个人博客'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1243,5 +1312,6 @@
 
   
 
+  <!-- 自定义动态背景样式 <script type="text/javascript" src="/js/src/dynamic_bg.js"></script> -->
 </body>
 </html>

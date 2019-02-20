@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F2019%2F02%2F15%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[我的第一篇博客hexo+GitHub Page 搭建个人博客（一）使用到的技术hexo、 GitHub Page 、 Node.js余下全文。。。。。。敬请期待]]></content>
+    <title><![CDATA[Hexo +GitHub Pages 搭建个人博客（二）]]></title>
+    <url>%2F2019%2F02%2F19%2FHexo%2BGitHub%20Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22%2F</url>
+    <content type="text"><![CDATA[前言: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js Github创建和配置 ​ 使用GitHub在自己主页创建一个新的版本库 ​ ​ 配置GitHub Pages: 进去版本库，点击右上角Settings]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>GitHub</tag>
+        <tag>GitHub Pages</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F02%2F15%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Hexo +GitHub Pages 搭建个人博客]]></title>
+    <url>%2F2019%2F02%2F15%2FHexo%2BGitHub%20Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[Tips: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js 使用GitHub在自己主页创建一个新的版本库 配置GitHub Pages: 进去版本库，点击右上角Settings。选择一个主题 至此，我们已经配置好了github默认的静态站点，并且可以访问：你的github用户名.github.io测试我们刚刚建立好的站点主页。 安装git 官网下载并安装git https://git-scm.com/download/win 测试是否安装成功 windows+R输入cmd打开命令提示符窗口，输入如下命令： git --version 若安装成功会打印出本机安装的git的版本。 添加SSH KEY到Github SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交 （1）检测本机是否有设置 SSHKEY]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>GitHub Pages</tag>
+      </tags>
   </entry>
 </search>
