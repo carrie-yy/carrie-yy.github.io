@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="hexo,GitHub Pages,">
+  <meta name="keywords" content="Java,">
 
 
 
@@ -86,28 +86,18 @@
 
 
 
-<meta name="description" content="前言在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
-<meta name="keywords" content="hexo,GitHub Pages">
+<meta name="description" content="前言：泛型是jdk5引入的类型机制，将类型参数化。泛型机制将类型转换时的检查从运行时提前到了编译时，使用泛型编写的代码比杂乱的使用Object并在需要时在强制类型转换的机制具有更好的可读性和安全性。 泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo +GitHub Pages 搭建个人博客">
-<meta property="og:url" content="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/index.html">
+<meta property="og:title" content="Java泛型">
+<meta property="og:url" content="https://carrie-yy.github.io/2019/03/19/泛型/index.html">
 <meta property="og:site_name" content="Carrie&#39;s Blog">
-<meta property="og:description" content="前言在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
+<meta property="og:description" content="前言：泛型是jdk5引入的类型机制，将类型参数化。泛型机制将类型转换时的检查从运行时提前到了编译时，使用泛型编写的代码比杂乱的使用Object并在需要时在强制类型转换的机制具有更好的可读性和安全性。 泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550470741.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550490145%281%29.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/1550490355%281%29.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/image/blog/hexo8F86103D-499B-43a4-BEED-9201FF319510.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/image/blog/hexo7D1F82AC-D493-4dd5-84A1-CF4AFEFB8244.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/image/blog/hexo30-7.png">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/image/blog/hexov2-cb1fd5e5a2e73f513234e434724c7c55_hd.jpg">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/image/blog/hexov2-4252029e5634bf91c7d58916ae2b8ac3_hd.jpg">
-<meta property="og:image" content="http://pn601wq05.bkt.clouddn.com/deploy.png">
-<meta property="og:updated_time" content="2019-02-20T11:34:21.489Z">
+<meta property="og:updated_time" content="2019-03-19T12:04:34.650Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo +GitHub Pages 搭建个人博客">
-<meta name="twitter:description" content="前言在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js">
-<meta name="twitter:image" content="http://pn601wq05.bkt.clouddn.com/1550470741.png">
+<meta name="twitter:title" content="Java泛型">
+<meta name="twitter:description" content="前言：泛型是jdk5引入的类型机制，将类型参数化。泛型机制将类型转换时的检查从运行时提前到了编译时，使用泛型编写的代码比杂乱的使用Object并在需要时在强制类型转换的机制具有更好的可读性和安全性。 泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法">
 
 
 
@@ -137,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/">
+  <link rel="canonical" href="https://carrie-yy.github.io/2019/03/19/泛型/">
 
 
 
 
 
-  <title>Hexo +GitHub Pages 搭建个人博客 | Carrie's Blog</title>
+  <title>Java泛型 | Carrie's Blog</title>
   
 
 
@@ -323,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/03/19/泛型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Carrie">
@@ -340,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo +GitHub Pages 搭建个人博客</h1>
+          <h1 class="post-title" itemprop="name headline">Java泛型</h1>
         
 
         <div class="post-meta">
@@ -352,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-15T14:00:35+08:00">
-                2019-02-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-19T10:08:21+08:00">
+                2019-03-19
               </time>
             
 
@@ -375,8 +365,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
 
@@ -417,80 +407,65 @@
       
 
       
-        <hr>
-<blockquote>
-<p><strong>前言</strong><br>在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js</p>
+        <blockquote>
+<p> <strong>前言：泛型是jdk5引入的类型机制，将类型参数化。泛型机制将类型转换时的检查从运行时提前到了编译时，使用泛型编写的代码比杂乱的使用Object并在需要时在强制类型转换的机制具有更好的可读性和安全性。</strong></p>
+<p><strong>泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法</strong></p>
+</blockquote>
 <a id="more"></a>
+<h4 id="一、什么是泛型"><a href="#一、什么是泛型" class="headerlink" title="一、什么是泛型"></a>一、什么是泛型</h4><h5 id="1-1-引入泛型之前"><a href="#1-1-引入泛型之前" class="headerlink" title="1.1 引入泛型之前"></a>1.1 引入泛型之前</h5><h5 id="在Java增加泛型类型之前，通用程序的设计就是利用继承实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类基类。"><a href="#在Java增加泛型类型之前，通用程序的设计就是利用继承实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类基类。" class="headerlink" title="在Java增加泛型类型之前，通用程序的设计就是利用继承实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类基类。"></a>在Java增加泛型类型之前，通用程序的设计就是利用<strong>继承</strong>实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类<strong>基类</strong>。</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BeforeGeneric</span> </span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayList</span></span>&#123;<span class="comment">//泛型之前的通用程序设计</span></span><br><span class="line">		<span class="keyword">private</span> Object[] elements=<span class="keyword">new</span> Object[<span class="number">0</span>];</span><br><span class="line">		<span class="function"><span class="keyword">public</span> Object <span class="title">get</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">			<span class="keyword">return</span> elements[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Object o)</span></span>&#123;</span><br><span class="line">			<span class="comment">//这里的实现，只是为了演示，不具有任何参考价值</span></span><br><span class="line">			<span class="keyword">int</span> length=elements.length;</span><br><span class="line">			Object[] newElments=<span class="keyword">new</span> Object[length+<span class="number">1</span>];</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;length;i++)&#123;</span><br><span class="line">				newElments[i]=elements[i];</span><br><span class="line">			&#125;</span><br><span class="line">			newElments[length]=o;</span><br><span class="line">			elements=newElments;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		ArrayList stringValues=<span class="keyword">new</span> ArrayList();</span><br><span class="line">		stringValues.add(<span class="number">1</span>);<span class="comment">//可以向数组中添加任何类型的对象</span></span><br><span class="line">		<span class="comment">//问题1——获取值时必须强制转换	</span></span><br><span class="line">		String str=(String) stringValues.get(<span class="number">0</span>); </span><br><span class="line">		<span class="comment">//问题2——上述强制转型编译时不会出错，而运行时报异常java.lang.ClassCastException</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样的实现面临两个问题：</p>
+<p>1、当我们获取一个值的时候，必须进行强制类型转换。</p>
+<p>2、假定我们预想的是利用stringValues来存放String集合，因为ArrayList只是维护一个Object引用的数组，我们无法阻止将Integer类型（Object子类）的数据加入stringValues。然而，当我们使用数据的时候，需要将获取的Object对象转换为我们期望的类型（String），如果向集合中添加了非预期的类型（如Integer），编译时我们不会收到任何的错误提示。但当我们运行程序时却会报异常：</p>
+<p>Exception in thread “main” java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String<br>at generic.BeforeGeneric.main(BeforeGeneric.java:24)</p>
+<font color="green">这显然不是我们所期望的，如果程序有潜在的错误，我们更期望在编译时被告知错误，而不是在运行时报异常</font>
+
+
+
+<h5 id="1-2-泛型程序设计意味着程序可以被不同类型的对象重用，类似c-的模版"><a href="#1-2-泛型程序设计意味着程序可以被不同类型的对象重用，类似c-的模版" class="headerlink" title="1.2  泛型程序设计意味着程序可以被不同类型的对象重用，类似c++的模版"></a><strong>1.2  泛型程序设计意味着程序可以被不同类型的对象重用，类似c++的模版</strong></h5><p>泛型提供了更好的解决办法——类型参数，如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;<span class="built_in">String</span>&gt; list = <span class="keyword">new</span> ArrayList&lt;<span class="built_in">String</span>&gt;()；</span><br></pre></td></tr></table></figure>
+<p>这样解决了几个问题：</p>
+<font color="#B22222">1 可读性，从字面上就可以判断集合中的内容类型；<br>2 类型检查，避免插入非法类型。<br><br>3 获取数据时不在需要强制类型转换。<br></font>
+
+<h4 id="二、泛型使用"><a href="#二、泛型使用" class="headerlink" title="二、泛型使用"></a>二、泛型使用</h4><h5 id="2-1-泛型类"><a href="#2-1-泛型类" class="headerlink" title="2.1 泛型类"></a>2.1 泛型类</h5><p>泛型类型用于类的定义中，被称为泛型类。通过泛型可以完成对一组类的操作对外开放相同的接口。最典型的就是各种容器类，如：List、Set、Map。</p>
+<p>泛型类的最基本写法（这么看可能会有点晕，会在下面的例子中详解）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 类名称 &lt;泛型标识：可以随便写任意标识号，标识指定的泛型的类型&gt;</span>&#123;</span><br><span class="line">  <span class="keyword">private</span> 泛型标识 <span class="comment">/*（成员变量类型）*/</span> <span class="keyword">var</span>; </span><br><span class="line">  .....</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong><font color="#C71585">举个例子 </font></strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//此处T可以随便写为任意标识，常见的如T、E、K、V等形式的参数常用于表示泛型</span></span><br><span class="line"><span class="comment">//在实例化泛型类时，必须指定T的具体类型</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Generic</span>&lt;<span class="title">T</span>&gt;</span>&#123; </span><br><span class="line">    <span class="comment">//key这个成员变量的类型为T,T的类型由外部指定  </span></span><br><span class="line">    <span class="keyword">private</span> T key;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Generic</span><span class="params">(T key)</span> </span>&#123; <span class="comment">//泛型构造方法形参key的类型也为T，T的类型由外部指定</span></span><br><span class="line">        <span class="keyword">this</span>.key = key;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">getKey</span><span class="params">()</span></span>&#123; <span class="comment">//泛型方法getKey的返回值类型为T，T的类型由外部指定</span></span><br><span class="line">        <span class="keyword">return</span> key;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//泛型的类型参数只能是类类型（包括自定义类），不能是简单类型</span></span><br><span class="line"><span class="comment">//传入的实参类型需与泛型的类型参数类型相同，即为Integer.</span></span><br><span class="line">Generic&lt;Integer&gt; genericInteger = <span class="keyword">new</span> Generic&lt;Integer&gt;(<span class="number">123456</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//传入的实参类型需与泛型的类型参数类型相同，即为String.</span></span><br><span class="line">Generic&lt;String&gt; genericString = <span class="keyword">new</span> Generic&lt;String&gt;(<span class="string">"key_vlaue"</span>);</span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + genericInteger.getKey());</span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + genericString.getKey());</span><br></pre></td></tr></table></figure>
+<p>12-27 09:20:04.432 13063-13063/? D/泛型测试: key is 123456<br>12-27 09:20:04.432 13063-13063/? D/泛型测试: key is key_vlaue</p>
+<p><strong>定义的泛型类，就一定要传入泛型类型实参么？</strong>并不是这样，在使用泛型的时候如果传入泛型实参，则会根据传入的泛型实参做相应的限制，此时泛型才会起到本应起到的限制作用。如果不传入泛型类型实参的话，在泛型类中使用泛型的方法或成员变量定义的类型可以为任何的类型。</p>
+<p>看一个例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Generic generic = <span class="keyword">new</span> Generic(<span class="string">"111111"</span>);</span><br><span class="line">Generic generic1 = <span class="keyword">new</span> Generic(<span class="number">4444</span>);</span><br><span class="line">Generic generic2 = <span class="keyword">new</span> Generic(<span class="number">55.55</span>);</span><br><span class="line">Generic generic3 = <span class="keyword">new</span> Generic(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + generic.getKey());</span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + generic1.getKey());</span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + generic2.getKey());</span><br><span class="line">Log.d(<span class="string">"泛型测试"</span>,<span class="string">"key is "</span> + generic3.getKey());</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">D/泛型测试: key is <span class="number">111111</span></span><br><span class="line">D/泛型测试: key is <span class="number">4444</span></span><br><span class="line">D/泛型测试: key is <span class="number">55.55</span></span><br><span class="line">D/泛型测试: key is <span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+<h5 id="2-2-泛型接口"><a href="#2-2-泛型接口" class="headerlink" title="2.2  泛型接口"></a>2.2  泛型接口</h5><p>泛型接口与泛型类的定义及使用基本相同。泛型接口常被用在各种类的生产器中，可以看一个例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个泛型接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Generator</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">next</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当实现泛型接口的类，传入泛型实参时：</p>
+<h5 id="2-3-泛型方法"><a href="#2-3-泛型方法" class="headerlink" title="2.3  泛型方法"></a>2.3  泛型方法</h5><h4 id="三、Java泛型实现方法：类型擦除"><a href="#三、Java泛型实现方法：类型擦除" class="headerlink" title="三、Java泛型实现方法：类型擦除"></a>三、Java泛型实现方法：类型擦除</h4><blockquote>
+<p>Java中的泛型基本上都是在编译器这个层次来实现的。在生成的Java字节码中是不包含泛型中的类型信息的。使用泛型的时候加上的类型参数，会在编译器在编译的时候去掉。这个过程就称为类型擦除。</p>
 </blockquote>
-<h4 id="1-使用GitHub在自己主页创建一个新的版本库"><a href="#1-使用GitHub在自己主页创建一个新的版本库" class="headerlink" title="1. 使用GitHub在自己主页创建一个新的版本库"></a>1. 使用GitHub在自己主页创建一个新的版本库</h4><p><img src="http://pn601wq05.bkt.clouddn.com/1550470741.png" alt="image"></p>
-<p><strong> 配置GitHub Pages: 进去版本库，点击右上角Settings。选择一个主题</strong><br>   <img src="http://pn601wq05.bkt.clouddn.com/1550490145%281%29.png" alt="image"><br>   <img src="http://pn601wq05.bkt.clouddn.com/1550490355%281%29.png" alt="image"></p>
-<p><strong>至此，我们已经配置好了github默认的静态站点，并且可以访问：你的github用户名.github.io测试我们刚刚建立好的站点主页。</strong></p>
-<h4 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.  安装git"></a>2.  安装git</h4><h5 id="2-1-官网下载并安装git-https-git-scm-com-download-win"><a href="#2-1-官网下载并安装git-https-git-scm-com-download-win" class="headerlink" title="2.1. 官网下载并安装git https://git-scm.com/download/win"></a>2.1. 官网下载并安装git <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a></h5><h5 id="2-2-测试是否安装成功-windows-R输入cmd打开命令提示符窗口，输入如下命令："><a href="#2-2-测试是否安装成功-windows-R输入cmd打开命令提示符窗口，输入如下命令：" class="headerlink" title="2.2. 测试是否安装成功**  windows+R输入cmd打开命令提示符窗口，输入如下命令："></a>2.2. 测试是否安装成功**  windows+R输入cmd打开命令提示符窗口，输入如下命令：</h5><p>   <code>git --version</code></p>
-<p>   若安装成功会打印出本机安装的git的版本。</p>
-<h5 id="2-3-添加SSH-KEY到Github"><a href="#2-3-添加SSH-KEY到Github" class="headerlink" title="2.3 添加SSH KEY到Github"></a>2.3 添加SSH KEY到Github</h5><p>​    SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交</p>
-<h6 id="2-3-1-检测本机是否有设置-SSHKEY"><a href="#2-3-1-检测本机是否有设置-SSHKEY" class="headerlink" title="2.3.1   检测本机是否有设置 SSHKEY"></a>2.3.1   <strong>检测本机是否有设置 SSHKEY</strong></h6><blockquote>
-<p>打开git bash，输入cd ~/.ssh 或cd .ssh<br>如果没有则提示： No such file or directory<br>如果有则进入~/.ssh路径下（ls查看当前路径文件，rm * 删除所有文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; stringArrayList = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">List&lt;Integer&gt; integerArrayList = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">Class classStringArrayList = stringArrayList.getClass();</span><br><span class="line">Class classIntegerArrayList = integerArrayList.getClass();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(classStringArrayList.equals(classIntegerArrayList))&#123;</span><br><span class="line">    Log.d(<span class="string">"泛型测试"</span>,<span class="string">"类型相同"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果：D/泛型测试: 类型相同。</p>
+<p>通过上面的例子可以证明，在编译之后程序会采取去泛型化的措施。也就是说Java中的泛型，只在编译阶段有效。在编译过程中，正确检验泛型结果后，会将泛型的相关信息擦出，并且在对象进入和离开方法的边界处添加类型检查和类型转换的方法。也就是说，泛型信息不会进入到运行时阶段。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test4</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IllegalArgumentException, SecurityException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </span>&#123;</span><br><span class="line">		ArrayList&lt;Integer&gt; arrayList3=<span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		arrayList3.add(<span class="number">1</span>);<span class="comment">//这样调用add方法只能存储整形，因为泛型类型的实例为Integer</span></span><br><span class="line">		arrayList3.getClass().getMethod(<span class="string">"add"</span>, Object.class).invoke(arrayList3, <span class="string">"asd"</span>);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arrayList3.size();i++) &#123;</span><br><span class="line">			System.out.println(arrayList3.get(i));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>在程序中定义了一个ArrayList泛型类型实例化为Integer的对象，如果直接调用add方法，那么只能存储整形的数据。不过当我们利用反射调用add方法的时候，却可以存储字符串。这说明了Integer泛型实例在编译之后被擦除了，只保留了&lt;font color=’red&gt;’原始类型。&lt;/</p>
+<font color="green">对此总结成一句话：也就是说Java中的泛型，只在编译阶段有效。泛型类型在逻辑上看以看成是多个不同的类型，实际上都是相同的基本类型。</font>
+
+<h4 id="类型擦除后保留的原始类型"><a href="#类型擦除后保留的原始类型" class="headerlink" title="类型擦除后保留的原始类型"></a>类型擦除后保留的原始类型</h4><blockquote>
+<p>原始类型（raw type）就是擦除去了泛型信息，最后在字节码中的类型变量的真正类型。无论何时定义一个泛型类型，相应的原始类型都会被自动地提供。类型变量被擦除（crased），并使用其限定类型（无限定的变量用Object）替换。</p>
 </blockquote>
-<h6 id="2-3-2-生成SSHKEY"><a href="#2-3-2-生成SSHKEY" class="headerlink" title="2.3.2.  生成SSHKEY"></a>2.3.2.  <strong>生成SSHKEY</strong></h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~  #保证当前路径在”~”下</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"这里填写你的邮箱地址"</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车</span><br><span class="line">Enter passphrase (empty for no passphrase):   #输入密码（可以为空）</span><br><span class="line">Enter same passphrase again:   #再次确认密码（可以为空）</span><br><span class="line">Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥</span><br><span class="line">Your <span class="keyword">public</span> key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥</span><br><span class="line">The key fingerprint is:</span><br><span class="line">e3:<span class="number">51</span>:<span class="number">33</span>:xx:xx:xx:xx:xxx:<span class="number">61</span>:<span class="number">28</span>:<span class="number">83</span>:e2:<span class="number">81</span> xxxxxx@yy.com</span><br></pre></td></tr></table></figure>
-<p>   至此，已经生成ssh key，其存放路径为：c:/Users/你电脑的用户名/.ssh/下。</p>
-<h6 id="2-3-3-复制SSH-KEY到Github"><a href="#2-3-3-复制SSH-KEY到Github" class="headerlink" title="2.3.3.  复制SSH KEY到Github"></a>2.3.3.  <strong>复制SSH KEY到Github</strong></h6><blockquote>
-<p>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">到C盘你的用户目录下找到.ssh文件夹，查看里面是否有id_rsa和id_rsa.pub这两个文件。</span><br></pre></td></tr></table></figure>
-<p>   登录GitHub系统；点击右上角账号头像的“▼”→Settings→SSH kyes→Add SSH key，Title自定义，复制id_rsa.pub的公钥内容到GitHub中Add an SSH key的key输入框，最后“Add Key”。</p>
-<h6 id="2-3-4-配置账户"><a href="#2-3-4-配置账户" class="headerlink" title="2.3.4.  配置账户"></a>2.3.4.  <strong>配置账户</strong></h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “your_username”  #设置用户名</span><br><span class="line">$ git config --global user.email “your_registered_github_Email” </span><br><span class="line">#设置邮箱地址(建议用注册giuhub的邮箱)</span><br></pre></td></tr></table></figure>
-<h6 id="2-3-5-测试SSH-KEY是否设置成功"><a href="#2-3-5-测试SSH-KEY是否设置成功" class="headerlink" title="2.3.5.    测试SSH KEY是否设置成功"></a>2.3.5.    <strong>测试SSH KEY是否设置成功</strong></h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>   接下来会返回一些信息，并需要你输入一次yes，若生成ssh key时设置有密码则还会让你输入生成ssh key时设置的密码。</p>
-<p>   Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access. #出现词句话，说明设置成功。</p>
-<p>   SSH-KEY的生成与配置可参考<a href="https://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="noopener">图文教程window下配置SSH连接GitHub、GitHub配置ssh key：</a></p>
-<hr>
-<h4 id="3-安装Node-js-和配置-Hexo"><a href="#3-安装Node-js-和配置-Hexo" class="headerlink" title="3. 安装Node.js 和配置 Hexo"></a>3. 安装Node.js 和配置 Hexo</h4><h5 id="3-1-安装Node-js"><a href="#3-1-安装Node-js" class="headerlink" title="3.1 安装Node.js"></a>3.1 安装Node.js</h5><p> Node.js官网 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 下载安装node.js。<br> 具体安装教程可参考   <a href="https://www.cnblogs.com/fanyx/p/6946039.html" target="_blank" rel="noopener">https://www.cnblogs.com/fanyx/p/6946039.html</a></p>
-<h5 id="3-2-安装配置Hexo"><a href="#3-2-安装配置Hexo" class="headerlink" title="3.2  安装配置Hexo"></a>3.2  安装配置Hexo</h5><blockquote>
-<p>hexo是基于node.js的静态博客，官网也是搭建在GitHub上。<br>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</p>
-<h6 id="3-2-1-安装Hexo"><a href="#3-2-1-安装Hexo" class="headerlink" title="3.2.1 安装Hexo"></a>3.2.1 安装Hexo</h6></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p> 如果执行这条命令时长时间未成功，那么请先使用下面的命令将npm镜像源更改为国内的镜像，再执行上面的安装命令，因为国外的镜像源很有可能被墙了。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
-<p>查看是否安装成功  <code>hexo  -v</code>    有版本号输出表示安装成功</p>
-<p><img src="http://pn601wq05.bkt.clouddn.com/image/blog/hexo8F86103D-499B-43a4-BEED-9201FF319510.png" alt></p>
-<h5 id="3-2-2-初始化Hexo"><a href="#3-2-2-初始化Hexo" class="headerlink" title="3.2.2 初始化Hexo"></a>3.2.2 初始化Hexo</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo -init  hexo  <span class="comment">//这里会将Github上的hexo项目clone下来，得到hexo文件夹。初始化成功后会在最后打印一行：INFO Start blogging with Hexo!</span></span><br><span class="line">cd hexo  <span class="comment">// 进入文件夹</span></span><br><span class="line">npm install  <span class="comment">// 初始化博客</span></span><br></pre></td></tr></table></figure>
-<p>初始化完成后，指定文件夹目录下有：</p>
-<ul>
-<li>node_modules: 依赖包</li>
-<li>public：存放生成的页面</li>
-<li>scaffolds：生成文章的一些模板</li>
-<li>source：用来存放你的文章</li>
-<li>themes：主题</li>
-<li><strong> _config.yml: 博客的配置文件</strong></li>
-</ul>
-<h5 id="3-2-3-部署文件"><a href="#3-2-3-部署文件" class="headerlink" title="3.2.3 部署文件"></a>3.2.3 部署文件</h5><p>为了检测我们的网站雏形，分别按顺序输入以下三条命令：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new 'MyFirstBlog'</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p><img src="http://pn601wq05.bkt.clouddn.com/image/blog/hexo7D1F82AC-D493-4dd5-84A1-CF4AFEFB8244.png" alt></p>
-<p>在浏览器输入：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即可访问到我们搭建好的hexo站点。</p>
-<p><img src="http://pn601wq05.bkt.clouddn.com/image/blog/hexo30-7.png" alt></p>
-<blockquote>
-<p> 现在来介绍常用的Hexo 命令</p>
-<p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
-<p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
-<p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
-<p>刚刚的三个命令依次是新建一篇博客文章、生成网页、在本地预览的操作。  </p>
-</blockquote>
-<h4 id="4-将本地hexo项目托管到Github"><a href="#4-将本地hexo项目托管到Github" class="headerlink" title="4. 将本地hexo项目托管到Github"></a>4. 将本地hexo项目托管到Github</h4><p>上面只是在本地预览，接下来要做的就是就是推送网站，也就是发布网站，让我们的网站可以被更多的人访问。在设置之前，需要解释一个概念，在blog根目录里的_config.yml文件称为<strong>站点</strong>配置文件，如下图</p>
-<p><img src="http://pn601wq05.bkt.clouddn.com/image/blog/hexov2-cb1fd5e5a2e73f513234e434724c7c55_hd.jpg" alt></p>
-<p>进入根目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题</strong>配置文件，如下图</p>
-<p><img src="http://pn601wq05.bkt.clouddn.com/image/blog/hexov2-4252029e5634bf91c7d58916ae2b8ac3_hd.jpg" alt></p>
-<p>下一步将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：</p>
-<p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master</p>
-<p>参考如下：</p>
-<p><img src="http://pn601wq05.bkt.clouddn.com/deploy.png" alt="img"></p>
-<p>保存站点配置文件。</p>
-<p>其实就是给hexo d 这个命令做相应的配置，让hexo知道你要把blog部署在哪个位置，很显然，我们部署在我们GitHub的仓库里。</p>
-<p><strong>最后安装Git部署插件，输入命令：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h5 id="部署到Github上"><a href="#部署到Github上" class="headerlink" title="部署到Github上"></a>部署到Github上</h5><p>依次执行以下三条命令：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean  #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">$ hexo generator  #生成静态页面至<span class="keyword">public</span>目录</span><br><span class="line">$ hexo deploy  #将.deploy目录部署到GitHub</span><br></pre></td></tr></table></figure>
-<p>执行hexo deploy命令之后，如果最后一行打印出如下信息则表示部署成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
-<p>然后你再去访问你创建的Github pages地址，也就是：你的Github用户名.github.io，即可看到你本地的hexo项目已经被部署到github上去了。此时博客的默认主题是landscape，即上面本地测试时的样子。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> T value;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">getValue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setValue</span><span class="params">(T  value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.value = value;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Pair<t>的原始类型为：</t></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pair</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Object value;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">getValue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> value;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setValue</span><span class="params">(Object  value)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.value = value;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因为在Pair<t>中，T是一个无限定的类型变量，所以用Object替换。其结果就是一个普通的类，如同泛型加入java变成语言之前已经实现的那样。在程序中可以包含不同类型的Pair，如Pair<string>或Pair<integer>，但是，擦除类型后它们就成为原始的Pair类型了，原始类型都是Object。<br>从上面的那个例2中，我们也可以明白ArrayList<integer>被擦除类型后，原始类型也变成了Object，所以通过反射我们就可以存储字符串了。</integer></integer></string></t></p>
+<font color="green">如果类型变量有限定，那么原始类型就用第一个边界的类型变量来替换。</font>
+
+<p>比如Pair这样声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Comparable</span>&amp; <span class="title">Serializable</span>&gt; </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>那么原始类型就是Comparable<br><strong>注意：</strong></p>
+<p>如果Pair这样声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Serializable</span>&amp;<span class="title">Comparable</span>&gt;</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p> 那么原始类型就用Serializable替换，而编译器在必要的时要向Comparable插入强制类型转换</p>
+<p>为了提高效率，应该将标签（tagging）接口（即没有方法的接口）放在边界限定列表的末尾。</p>
 
       
     </div>
@@ -540,7 +515,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/" title="Hexo +GitHub Pages 搭建个人博客">https://carrie-yy.github.io/2019/02/15/Hexo+GitHub Pages搭建个人博客/</a>
+    <a href="https://carrie-yy.github.io/2019/03/19/泛型/" title="Java泛型">https://carrie-yy.github.io/2019/03/19/泛型/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -555,9 +530,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
-            <a href="/tags/GitHub-Pages/" rel="tag"><i class="fa fa-tag"></i> GitHub Pages</a>
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
           
         </div>
       
@@ -570,15 +543,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/02/15/Hexo+GitHub Pages搭建个人博客/" rel="next" title="Hexo +GitHub Pages 搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Hexo +GitHub Pages 搭建个人博客
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/19/泛型/" rel="prev" title="Java泛型">
-                Java泛型 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -738,7 +711,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-使用GitHub在自己主页创建一个新的版本库"><span class="nav-text">1. 使用GitHub在自己主页创建一个新的版本库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装git"><span class="nav-text">2.  安装git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-官网下载并安装git-https-git-scm-com-download-win"><span class="nav-text">2.1. 官网下载并安装git https://git-scm.com/download/win</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-测试是否安装成功-windows-R输入cmd打开命令提示符窗口，输入如下命令："><span class="nav-text">2.2. 测试是否安装成功**  windows+R输入cmd打开命令提示符窗口，输入如下命令：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-添加SSH-KEY到Github"><span class="nav-text">2.3 添加SSH KEY到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-1-检测本机是否有设置-SSHKEY"><span class="nav-text">2.3.1   检测本机是否有设置 SSHKEY</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-2-生成SSHKEY"><span class="nav-text">2.3.2.  生成SSHKEY</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-3-复制SSH-KEY到Github"><span class="nav-text">2.3.3.  复制SSH KEY到Github</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-4-配置账户"><span class="nav-text">2.3.4.  配置账户</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-5-测试SSH-KEY是否设置成功"><span class="nav-text">2.3.5.    测试SSH KEY是否设置成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-安装Node-js-和配置-Hexo"><span class="nav-text">3. 安装Node.js 和配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-安装Node-js"><span class="nav-text">3.1 安装Node.js</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-安装配置Hexo"><span class="nav-text">3.2  安装配置Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-1-安装Hexo"><span class="nav-text">3.2.1 安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-2-初始化Hexo"><span class="nav-text">3.2.2 初始化Hexo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-3-部署文件"><span class="nav-text">3.2.3 部署文件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-将本地hexo项目托管到Github"><span class="nav-text">4. 将本地hexo项目托管到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#部署到Github上"><span class="nav-text">部署到Github上</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是泛型"><span class="nav-text">一、什么是泛型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-引入泛型之前"><span class="nav-text">1.1 引入泛型之前</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在Java增加泛型类型之前，通用程序的设计就是利用继承实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类基类。"><span class="nav-text">在Java增加泛型类型之前，通用程序的设计就是利用继承实现的，例如，ArrayList类只维护一个Object引用的数组，Object为所有类基类。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-泛型程序设计意味着程序可以被不同类型的对象重用，类似c-的模版"><span class="nav-text">1.2  泛型程序设计意味着程序可以被不同类型的对象重用，类似c++的模版</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、泛型使用"><span class="nav-text">二、泛型使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-泛型类"><span class="nav-text">2.1 泛型类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-泛型接口"><span class="nav-text">2.2  泛型接口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-泛型方法"><span class="nav-text">2.3  泛型方法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、Java泛型实现方法：类型擦除"><span class="nav-text">三、Java泛型实现方法：类型擦除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类型擦除后保留的原始类型"><span class="nav-text">类型擦除后保留的原始类型</span></a></li></ol></div>
             
 
           </div>
@@ -1337,13 +1310,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/zh-tw/docs/variables.html
-      var isPost = 'Hexo +GitHub Pages 搭建个人博客'.length > 0
+      var isPost = 'Java泛型'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'Hexo +GitHub Pages 搭建个人博客'
+        var title = 'Java泛型'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))

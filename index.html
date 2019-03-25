@@ -309,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/02/19/Hexo+GitHub Pages搭建个人博客2/">
+    <link itemprop="mainEntityOfPage" href="https://carrie-yy.github.io/2019/03/19/泛型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Carrie">
@@ -328,7 +328,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/02/19/Hexo+GitHub Pages搭建个人博客2/" itemprop="url">Hexo +GitHub Pages 搭建个人博客（二）</a></h1>
+                <a class="post-title-link" href="/2019/03/19/泛型/" itemprop="url">Java泛型</a></h1>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-19T14:00:35+08:00">
-                2019-02-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-19T10:08:21+08:00">
+                2019-03-19
               </time>
             
 
@@ -363,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
 
@@ -401,10 +401,13 @@
 
       
         
-          <div class="note warning">前言: 在学习过程中发现琐碎的只是难以系统化，随意学习使用博客方式方便自己维护和系统总结——– 记录自己尝试搭建个人博客的过程。工具：GitHub pages 、Hexo、Node.js<br></div>
+          <blockquote>
+<p> <strong>前言：泛型是jdk5引入的类型机制，将类型参数化。泛型机制将类型转换时的检查从运行时提前到了编译时，使用泛型编写的代码比杂乱的使用Object并在需要时在强制类型转换的机制具有更好的可读性和安全性。</strong></p>
+<p><strong>泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法</strong></p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/02/19/Hexo+GitHub Pages搭建个人博客2/#more" rel="contents">
+            <a class="btn" href="/2019/03/19/泛型/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -653,7 +656,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -664,7 +667,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1296,7 +1299,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Hexo +GitHub Pages 搭建个人博客（二）");titles.push("Hexo +GitHub Pages 搭建个人博客");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("Java泛型");titles.push("Hexo +GitHub Pages 搭建个人博客");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
